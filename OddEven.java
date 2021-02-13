@@ -1,8 +1,11 @@
 //to display whether a number is even or odd
 
+import java.util.Scanner;
 class OddEven{
 	public static void main(String args[]){
-		int n=14;
+		Scanner obj=new Scanner(System.in);
+		System.out.println("Enter a number to check:");
+		int n=obj.nextInt();
 		if(n%2==0)
 		{
 		   System.out.println(n+" is even");
@@ -14,5 +17,7 @@ class OddEven{
 	}
 }
 
-//OUTPUT
-//14 is even	
+/*OUTPUT
+Enter a number to check:
+12
+12 is even */
